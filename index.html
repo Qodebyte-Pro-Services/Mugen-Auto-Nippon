@@ -663,34 +663,47 @@
             });
         });
     </script>
-    <script>
-document.getElementById('contactForm').addEventListener('submit', async function (e) {
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById('contactForm');
+  const statusEl = document.getElementById('formStatus');
+  const statusText = document.getElementById('formStatusText');
+
+  if (!form) return;
+
+  form.addEventListener('submit', async function (e) {
     e.preventDefault();
-    const form = this;
     const formData = new FormData(form);
 
-    const response = await fetch('send-email.php', {
+    try {
+      const response = await fetch('send-email.php', {
         method: 'POST',
         body: formData
-    });
+      });
 
-    
-    console.log('Form submitted');
-    const result = await response.text();
-    console.log("Results", result);
-    const statusEl = document.getElementById('formStatus');
-    const statusText = document.getElementById('formStatusText');
+      const result = (await response.text()).trim();
+      console.log('Response from PHP:', result); // debug log
 
-   if (result.trim() === 'success') {
+      if (result === 'success') {
         statusEl.className = 'form-status show success';
         statusText.textContent = 'Message sent. Thank you!';
-        statusText.classList.add('show');
         form.reset();
-    } else {
+      } else if (result === 'validation_error') {
+        statusEl.className = 'form-status show error';
+        statusText.textContent = 'Please fill the form correctly.';
+      } else {
         statusEl.className = 'form-status show error';
         statusText.textContent = 'Error sending message. Try again.';
+      }
+
+    } catch (error) {
+      console.error('Form submission failed:', error);
+      statusEl.className = 'form-status show error';
+      statusText.textContent = 'Something went wrong. Please try again later.';
     }
+  });
 });
 </script>
+
 </body>
 </html>
