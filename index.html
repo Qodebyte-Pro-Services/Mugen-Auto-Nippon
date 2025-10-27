@@ -587,33 +587,7 @@
                 }
             });
         });
-
-        // Contact form submission with validation
-        document.getElementById('contactForm').addEventListener('submit', async function (e) {
-            e.preventDefault();
-            const form = this;
-            const formData = new FormData(form);
-
-            const response = await fetch('send-email.php', {
-                method: 'POST',
-                body: formData
-            });
-
-            const result = await response.text();
-            const statusEl = document.getElementById('formStatus');
-            const statusText = document.getElementById('formStatusText');
-
-            if (result === 'success') {
-                statusEl.className = 'form-status show success';
-                statusText.textContent = currentLang === 'en' ? 'Message sent. Thank you!' : currentLang === 'fr' ? 'Message envoyé. Merci!' : currentLang === 'es' ? 'Mensaje enviado. ¡Gracias!'  : currentLang === 'de' ? 'Nachricht gesendet. Vielen Dank!' : currentLang === 'it' ? 'Messaggio inviato. Grazie!' : 'メッセージを送信しました。ありがとうございます！';
-                statusText.classList.add('show');
-                form.reset();
-            } else {
-                statusEl.className = 'form-status show error';
-                statusText.textContent = currentLang === 'en' ? 'Error sending message. Try again.' : currentLang === 'fr' ? 'Erreur lors de l\'envoi du message. Veuillez réessayer.' : currentLang === 'es' ? 'Error al enviar el mensaje. Inténtalo de nuevo.' : currentLang === 'de' ? 'Fehler beim Senden der Nachricht. Bitte erneut versuchen.' : currentLang === 'it' ? 'Errore nell\'invio del messaggio. Riprova.' : 'メッセージの送信に失敗しました。もう一度お試しください。';
-            }
-        });
-
+   
         // Hero Slider
         let currentSlide = 0;
         const slides = document.querySelectorAll('.hero-slide');
@@ -689,5 +663,34 @@
             });
         });
     </script>
+    <script>
+document.getElementById('contactForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const form = this;
+    const formData = new FormData(form);
+
+    const response = await fetch('send-email.php', {
+        method: 'POST',
+        body: formData
+    });
+
+    
+    console.log('Form submitted');
+    const result = await response.text();
+    console.log("Results", result);
+    const statusEl = document.getElementById('formStatus');
+    const statusText = document.getElementById('formStatusText');
+
+   if (result.trim() === 'success') {
+        statusEl.className = 'form-status show success';
+        statusText.textContent = 'Message sent. Thank you!';
+        statusText.classList.add('show');
+        form.reset();
+    } else {
+        statusEl.className = 'form-status show error';
+        statusText.textContent = 'Error sending message. Try again.';
+    }
+});
+</script>
 </body>
 </html>
