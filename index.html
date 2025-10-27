@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUGEN AUTO NIPPON LLC | 建設資材揚重サービス</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/Logo.png">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="assets/img/Logo.png" alt="MUGEN AUTO NIPPON LLC Logo">
+            </div>
+            <div class="loading-spinner"></div>
+            <p data-en="Loading..." data-ja="読み込み中..." data-es="Cargando..." data-fr="Chargement..." data-de="Laden..." data-it="Caricamento...">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">JA</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="it">IT</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/img/Logo.png" alt="MUGEN AUTO NIPPON LLC Logo">
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <nav class="mobile-menu" id="mainNav">
+                <ul>
+                    <li><a href="#home" class="active" data-it="Home" data-de="Home" data-es="Inicio" data-fr="Accueil" data-en="Home" data-ja="ホーム">Home</a></li>
+                    <li><a href="#about" data-en="About Us" data-ja="会社概要" data-es="Sobre Nosotros" data-fr="À Propos" data-it="Chi Siamo" data-de="Über Uns">About Us</a></li>
+                    <li><a href="#profile" data-en="Company Profile" data-ja="会社概要" data-es="Perfil de la Empresa" data-fr="Profil de l'Entreprise" data-it="Profilo Aziendale" data-de="Firmenprofil">Company Profile</a></li>
+                    <li><a href="#services" data-en="Business Content" data-ja="事業内容" data-es="Contenido Empresarial" data-fr="Contenu Commercial" data-it="Contenuti Aziendali" data-de="Geschäftsinhalte">Business Content</a></li>
+                    <li><a href="#gallery" data-en="Gallery" data-ja="ギャラリー" data-es="Galería" data-fr="Galerie" data-it="Galleria" data-de="Galerie">Gallery</a></li>
+                    <li><a href="#contact" data-en="Contact" data-ja="お問い合わせ" data-es="Contacto" data-fr="Contact" data-it="Contatto" data-de="Kontakt">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Page Content -->
+    <main id="home">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <div class="hero-slide active" style="background-image: url('assets/img/building.jpeg')"></div>
+                <div class="hero-slide" style="background-image: url('assets/img/wood-placing.png')"></div>
+                <div class="hero-slide" style="background-image: url('assets/img/building-2.jpeg')"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 class="hero-title" data-de="Professionelle Dienstleistungen für den Materialtransport auf Baustellen" data-it="Servizi professionali di sollevamento materiali per costruzioni" data-en="Professional Construction Material Lifting Services" data-fr="Services de levage de matériaux de construction professionnels" data-es="Servicios de elevación de materiales de construcción profesionales" data-ja="プロの建設資材揚重サービス">Professional Construction Material Lifting Services</h1>
+                <p class="hero-subtitle" data-it="MUGEN AUTO NIPPON LLC si specializza in servizi professionali di sollevamento materiali per costruzioni (NIAGE), ponendo l'accento sulla sicurezza e sull'affidabilità per garantire un progresso fluido nei cantieri edili." data-de="MUGEN AUTO NIPPON LLC ist auf Dienstleistungen für den Materialtransport auf Baustellen (NIAGE) spezialisiert und legt großen Wert auf Sicherheit und Zuverlässigkeit, um einen reibungslosen Ablauf auf den Baustellen zu gewährleisten." data-en="MUGEN AUTO NIPPON LLC specializes in construction site material lifting (NIAGE) services, prioritizing safety and reliability to ensure smooth progress at construction sites." data-fr="MUGEN AUTO NIPPON LLC se spécialise dans les services de levage de matériaux sur les chantiers de construction (NIAGE), en mettant l'accent sur la sécurité et la fiabilité pour garantir le bon déroulement des travaux." data-es="MUGEN AUTO NIPPON LLC se especializa en servicios de elevación de materiales en sitios de construcción (NIAGE), priorizando la seguridad y la fiabilidad para garantizar un progreso fluido en los sitios de construcción." data-ja="有限会社MUGEN AUTO NIPPONは、建設現場での資材揚重（荷揚げ）サービスを専門とし、安全性と信頼性を最優先に、建設現場の円滑な進行を確保します。">MUGEN AUTO NIPPON LLC specializes in construction site material lifting (NIAGE) services, prioritizing safety and reliability to ensure smooth progress at construction sites.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-de="Nehmen Sie Kontakt Auf" data-it="Mettiti in Contatto" data-en="Get In Touch" data-fr="Contactez-Nous" data-es="Póngase en Contacto" data-ja="お問い合わせ">Get In Touch</a>
+                    <a href="#services" class="btn btn-secondary" data-de="Unsere Dienstleistungen" data-it="I nostri servizi" data-en="Our Services" data-fr="Nos Services" data-es="Nuestros Servicios" data-ja="サービス内容">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <span data-en="Scroll Down" data-ja="下にスクロール" data-es="Desplácese hacia abajo" data-fr="Faites défiler vers le bas" data-de="Nach unten scrollen" data-it="Scorri verso il basso">Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-de="Unsere Dienstleistungen" data-it="I nostri servizi" data-en="Our Services" data-fr="Nos Services" data-es="Nuestros Servicios" data-ja="サービス内容">Our Services</h2>
+                    <p data-de="Wir bieten spezialisierte Dienstleistungen für den Materialtransport auf Baustellen an, mit einem Fokus auf Sicherheit und Effizienz." data-it="Offriamo servizi di sollevamento materiali specializzati per cantieri edili, con un focus su sicurezza ed efficienza." data-en="We provide specialized material lifting services for construction sites, focusing on safety and efficiency." data-fr="Nous fournissons des services de levage de matériaux spécialisés pour les chantiers de construction, en mettant l'accent sur la sécurité et l'efficacité." data-es="Ofrecemos servicios de elevación de materiales especializados para sitios de construcción, centrándonos en la seguridad y la eficiencia." data-ja="安全性と効率性に重点を置いた、建設現場向けの専門的な資材揚重サービスを提供しています。">We provide specialized material lifting services for construction sites, focusing on safety and efficiency.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-crane">🏗️</i>
+                        </div>
+                        <h3 data-de="Materialtransport auf Baustellen" data-it="Sollevamento di Materiali su Cantieri" data-en="Construction Site Material Lifting" data-fr="Levage de Matériaux sur Site de Construction" data-es="Elevación de Materiales en el Sitio de Construcción" data-ja="建設現場資材揚重">Construction Site Material Lifting</h3>
+                        <p data-it="Fornitura di servizi di sollevamento dei materiali durante il montaggio della struttura e assunzione del trasporto e del posizionamento dei materiali da costruzione." data-de="Bereitstellung von Materialhebungsdiensten während der Rahmenhebung und Übernahme des Transports und der Platzierung von Baumaterialien." data-en="Providing material lifting services during framework-raising and handling the transportation and placement of construction materials." data-fr="Fournir des services de levage de matériaux pendant l'élévation de la structure et gérer le transport et le placement des matériaux de construction." data-es="Proporcionar servicios de elevación de materiales durante el levantamiento de la estructura y manejar el transporte y la colocación de materiales de construcción." data-ja="建方工事中の資材揚重サービスを提供し、建設資材の運搬と設置を担当します。">Providing material lifting services during framework-raising and handling the transportation and placement of construction materials.</p>
+                    </div>
+                  <div class="service-item">
+  <div class="service-icon">
+    <i class="fas fa-hard-hat"></i>
+  </div>
+  <h3 
+    data-de="Sicherheits- und Compliance-Dienste" 
+    data-it="Servizi di Sicurezza e Conformità" 
+    data-en="Safety & Compliance Services" 
+    data-fr="Services de Sécurité et de Conformité" 
+    data-es="Servicios de Seguridad y Cumplimiento" 
+    data-ja="安全・コンプライアンスサービス">
+    Safety & Compliance Services
+  </h3>
+  <p 
+    data-en="All our workers have completed full harness training and follow strict safety protocols." 
+    data-de="Alle unsere Arbeiter haben eine vollständige Auffanggurt-Schulung absolviert und befolgen strenge Sicherheitsprotokolle." 
+    data-it="Tutti i nostri lavoratori hanno completato la formazione completa sull'uso dell'imbracatura di sicurezza e seguono rigorosi protocolli di sicurezza." 
+    data-fr="Tous nos travailleurs ont suivi une formation complète sur l'utilisation du harnais de sécurité et respectent des protocoles de sécurité stricts." 
+    data-es="Todos nuestros trabajadores han completado la formación completa sobre el uso del arnés de seguridad y siguen estrictos protocolos de seguridad." 
+    data-ja="全作業員がフルハーネス（安全帯）の完全なトレーニングを修了し、厳格な安全プロトコルに従っています。">
+    All our workers have completed full harness training and follow strict safety protocols.
+  </p>
+</div>
+                    <div class="service-item">
+  <div class="service-icon">
+    <i class="fas fa-truck-moving"></i>
+  </div>
+  <h3 
+    data-de="Materialtransport und -lieferung" 
+    data-it="Trasporto e Consegna Materiali" 
+    data-en="Material Transport & Delivery" 
+    data-fr="Transport et Livraison de Matériaux" 
+    data-es="Transporte y Entrega de Materiales" 
+    data-ja="資材輸送・配送">
+    Material Transport & Delivery
+  </h3>
+  <p 
+    data-en="Efficient transport and delivery services for construction materials and hardware to sites throughout the Kanto region, including locations inaccessible to large trucks or vehicles." 
+    data-de="Effiziente Transport- und Lieferdienste für Baumaterialien und Eisenwaren zu Baustellen in der gesamten Kanto-Region, einschließlich Orte, die für große Lastwagen oder Fahrzeuge unzugänglich sind." 
+    data-it="Servizi efficienti di trasporto e consegna di materiali da costruzione e ferramenta a cantieri in tutta la regione del Kanto, comprese le località non accessibili a camion o veicoli di grandi dimensioni." 
+    data-fr="Services efficaces de transport et de livraison de matériaux de construction et de quincaillerie vers des chantiers dans toute la région du Kanto, y compris les endroits inaccessibles aux camions ou véhicules de grande taille." 
+    data-es="Servicios eficientes de transporte y entrega de materiales de construcción y ferretería a sitios en toda la región de Kanto, incluidos aquellos inaccesibles para camiones o vehículos grandes." 
+    data-ja="関東地方全域の現場への建設資材・金物の効率的な輸送・配送サービス。大型トラックや車両が入れない場所への配送にも対応しています。">
+    Efficient transport and delivery services for construction materials and hardware to sites throughout the Kanto region, including locations inaccessible to large trucks or vehicles.
+  </p>
+</div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-de="Über Uns" data-it="Chi Siamo" data-en="About Us" data-fr="À Propos de Nous" data-es="Sobre Nosotros" data-ja="会社概要">About Us</h2>
+                    <p data-de="Erfahren Sie mehr über unser Unternehmen, unsere Mission und unsere Werte" data-it="Scopri di più sulla nostra azienda, la nostra missione e i nostri valori" data-en="Learn more about our company, mission, and values" data-fr="En savoir plus sur notre entreprise, notre mission et nos valeurs" data-es="Aprende más sobre nuestra empresa, misión y valores" data-ja="当社の会社、ミッション、価値観について詳しくご覧ください">Learn more about our company, mission, and values</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3 data-de="Unsere Geschichte" data-it="La Nostra Storia"  data-en="Our Story" data-fr="Notre Histoire" data-es="Nuestra Historia" data-ja="私たちのストーリー">Our Story</h3>
+                        <p  data-it="La nostra azienda è stata fondata per offrire &quot;servizi di sollevamento materiali sicuri, affidabili ed efficienti&quot; di cui i cantieri hanno veramente bisogno. Al centro del sollevamento delle strutture, abbiamo costruito fiducia lavorando fianco a fianco con carpentieri e supervisori di cantiere per garantire risultati precisi e affidabili." data-de="Unser Unternehmen wurde gegründet, um &quot;sichere, zuverlässige und effiziente Materialhebungsdienste&quot; anzubieten, die Baustellen wirklich benötigen. Im Mittelpunkt der Rahmenhebung haben wir Vertrauen aufgebaut, indem wir eng mit Zimmerleuten und Bauleitern zusammengearbeitet haben, um präzise und zuverlässige Ergebnisse zu gewährleisten." data-en="Our company was founded to deliver &quot;safe, reliable, and efficient material lifting services&quot; that construction sites truly need. Centered around framework-raising, we have built trust by working hand-in-hand with carpenters and site supervisors to ensure precise and dependable results." data-fr="Notre entreprise a été fondée pour offrir des &quot;services de levage de matériaux sûrs, fiables et efficaces&quot; dont les chantiers de construction ont vraiment besoin. Axés sur l'élévation de structures, nous avons bâti une relation de confiance en collaborant étroitement avec les charpentiers et les superviseurs de chantier pour garantir des résultats précis et fiables." data-es="Nuestra empresa fue fundada para ofrecer &quot;servicios de elevación de materiales seguros, confiables y eficientes&quot; que los sitios de construcción realmente necesitan. Centrándonos en la elevación de estructuras, hemos construido confianza trabajando mano a mano con carpinteros y supervisores de obra para garantizar resultados precisos y confiables." data-ja="当社は、建設現場が真に必要とする「安全で信頼性が高く効率的な資材揚重サービス」を提供するために設立されました。建方工事を中心に、大工職人や現場監督と密接に連携し、正確で信頼性の高い結果を確保することで信頼を築いてきました。">Our company was founded to deliver "safe, reliable, and efficient material lifting services" that construction sites truly need. Centered around framework-raising, we have built trust by working hand-in-hand with carpenters and site supervisors to ensure precise and dependable results.</p>
+
+                        <h3 data-de="Unsere Mission" data-it="La Nostra Missione" data-fr="Notre Mission" data-es="Nuestra Misión" data-en="Our Mission" data-ja="私たちのミッション">Our Mission</h3>
+                       <p 
+  data-de="„Menschen und Baustellen verbinden und die Zukunft gestalten.“ Wir setzen uns dafür ein, die Sicherheit und Effizienz auf Baustellen durch professionelle Hebedienste zu verbessern." 
+  data-es="«Conectar a las personas y los sitios, y construir el futuro». Nos comprometemos a mejorar la seguridad y la eficiencia en las obras de construcción mediante servicios profesionales de elevación." 
+  data-fr="« Relier les personnes et les chantiers, et construire l’avenir. » Nous nous engageons à améliorer la sécurité et l’efficacité sur les chantiers grâce à des services de levage professionnels." 
+  data-it="«Collegare le persone e i cantieri, e costruire il futuro.» Ci impegniamo a migliorare la sicurezza e l’efficienza nei cantieri attraverso servizi di sollevamento professionali." 
+  data-en="&quot;To connect people and sites, and build the future.&quot; We are committed to enhancing safety and efficiency at construction sites through professional lifting services." 
+  data-ja="「人と現場をつなぎ、未来を築く」。プロの揚重サービスを通じて、建設現場の安全性と効率性を高めることに取り組んでいます。">
+  "To connect people and sites, and build the future." We are committed to enhancing safety and efficiency at construction sites through professional lifting services.
+</p>
+                        <h3 data-de="Unsere Vision" data-it="La Nostra Visione" data-fr="Notre Vision" data-es="Nuestra Visión" data-en="Our Vision" data-ja="私たちのビジョン">Our Vision</h3>
+                        <p   data-de="Ein vertrauenswürdiger Partner zu sein, der gemeinsam mit Auftragnehmern und Handwerkern wächst und gleichzeitig ein Unternehmen bleibt, das die lokalen Gemeinschaften bedient und unterstützt." data-it="Essere un partner affidabile, crescere insieme a appaltatori e artigiani, continuando a essere un'azienda che serve e supporta le comunità locali." data-fr="Être un partenaire de confiance, grandissant aux côtés des entrepreneurs et des artisans, tout en continuant à être une entreprise qui sert et soutient les communautés locales." data-es="Ser un socio de confianza, creciendo junto con contratistas y artesanos, mientras seguimos siendo una empresa que sirve y apoya a las comunidades locales." data-en="To be a trusted partner, growing together with contractors and craftsmen, while continuing to be a company that serves and supports local communities." data-ja="請負業者や職人と共に成長する信頼できるパートナーであり続け、地域社会に奉献し支援する企業であり続けることです。">To be a trusted partner, growing together with contractors and craftsmen, while continuing to be a company that serves and supports local communities.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/img/WhatsApp Image 2025-10-22 at 16.28.19.jpeg" alt="Construction site">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Profile Section -->
+        <section id="profile" class="profile">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-en="Company Profile" data-ja="会社概要" data-es="Perfil de la Empresa" data-fr="Profil de l'Entreprise" data-it="Profilo Aziendale" data-de="Firmenprofil">Company Profile</h2>
+                    <p data-en="Detailed information about our company structure and operations" data-ja="当社の組織構造と事業運営に関する詳細情報" data-es="Información detallada sobre la estructura y operaciones de nuestra empresa" data-fr="Informations détaillées sur la structure et les opérations de notre entreprise" data-it="Informazioni dettagliate sulla struttura e le operazioni della nostra azienda" data-de="Detaillierte Informationen über unsere Unternehmensstruktur und -abläufe">Detailed information about our company structure and operations</p>
+                </div>
+                <div class="profile-content">
+                    <div class="profile-info">
+                        <div class="profile-item">
+                            <div class="profile-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="profile-details">
+                                <h3 data-en="Company Name" data-ja="会社名" data-es="Nombre de la Empresa" data-fr="Nom de l'Entreprise" data-it="Nome Azienda" data-de="Firmenname">Company Name</h3>
+                                <p>MUGEN AUTO NIPPON LLC</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="profile-details">
+                                <h3 data-en="Representative" data-ja="代表者" data-es="Representante" data-fr="Représentant" data-it="Rappresentante" data-de="Vertreter">Representative</h3>
+                                <p>Onuora Obedi Chidera</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="profile-details">
+                                <h3 data-en="Location" data-ja="所在地" data-es="Ubicación" data-fr="Emplacement" data-it="Posizione" data-de="Standort">Location</h3>
+                                <p>Wizard Building 402, 1-4-3 Asamacho, Nishi-ku,<br>Yokohama, Kanagawa Prefecture</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="profile-details">
+                                <h3 data-en="Establishment" data-ja="設立" data-es="Establecimiento" data-fr="Établissement" data-it="Fondazione" data-de="Gründung">Establishment</h3>
+                                <p>August 2023</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="profile-details">
+                                <h3 data-en="Business Content" data-ja="事業内容" data-es="Contenido Empresarial" data-fr="Contenu Commercial" data-it="Contenuti Aziendali" data-de="Geschäftsinhalte">Business Content</h3>
+                                <p data-en="Roofing/construction assistance/delivery of construction materials and hardware" data-ja="屋根工事/建設支援/建設資材・金物の配送" data-es="Techado/asistencia en construcción/entrega de materiales de construcción y ferretería" data-fr="Toiture/assistance à la construction/livraison de matériaux de construction et de quincaillerie" data-it="Coperture/assistenza edile/consegna di materiali da costruzione e ferramenta" data-de="Dachdeckerarbeiten/Bauhilfe/Lieferung von Baumaterialien und Eisenwaren">Roofing/construction assistance/delivery of construction materials and hardware</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="profile-details">
+                                <h3 data-en="Contact Information" data-ja="連絡先" data-es="Información de Contacto" data-fr="Coordonnées" data-it="Informazioni di Contatto" data-de="Kontaktinformationen">Contact Information</h3>
+                                <p>Phone: 046-259-0547<br>Email: mugenauto.jp@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <div class="profile-icon">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="profile-details">
+                                <h3 data-en="Service Areas" data-ja="対応エリア" data-es="Áreas de Servicio" data-fr="Zones de Service" data-it="Aree di Servizio" data-de="Servicebereiche">Service Areas</h3>
+                                <p data-en="Kanagawa Prefecture, Tokyo, Saitama Prefecture, Chiba Prefecture" data-ja="神奈川県、東京、埼玉県、千葉県" data-es="Prefectura de Kanagawa, Tokio, Prefectura de Saitama, Prefectura de Chiba" data-fr="Préfecture de Kanagawa, Tokyo, Préfecture de Saitama, Préfecture de Chiba" data-it="Prefettura di Kanagawa, Tokyo, Prefettura di Saitama, Prefettura di Chiba" data-de="Präfektur Kanagawa, Tokio, Präfektur Saitama, Präfektur Chiba">Kanagawa Prefecture, Tokyo, Saitama Prefecture, Chiba Prefecture</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-strengths">
+                        <h3 data-en="Our Strengths" data-ja="私たちの強み" data-es="Nuestras Fortalezas" data-fr="Nos Forces" data-it="I Nostri Punti di Forza" data-de="Unsere Stärken">Our Strengths</h3>
+                        <div class="strengths-grid">
+                            <div class="strength-item">
+                                <div class="strength-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <h4 data-en="Fast, Powerful Work" data-ja="迅速で力強い作業" data-es="Trabajo Rápido y Poderoso" data-fr="Travail Rapide et Puissant" data-it="Lavoro Veloce e Potente" data-de="Schnelle, kraftvolle Arbeit">Fast, Powerful Work</h4>
+                                <p data-en="by workers with on-site experience" data-ja="現場経験豊富な作業員による" data-es="por trabajadores con experiencia en el sitio" data-fr="par des travailleurs ayant une expérience sur site" data-it="da lavoratori con esperienza in loco" data-de="von Arbeitern mit Erfahrung vor Ort">by workers with on-site experience</p>
+                            </div>
+                            <div class="strength-item">
+                                <div class="strength-icon">
+                                    <i class="fas fa-user-shield"></i>
+                                </div>
+                                <h4 data-en="Full Harness Training" data-ja="フルハーネストレーニング修了" data-es="Capacitación Completa en Arnés" data-fr="Formation Complète au Harnais" data-it="Addestramento Completo all'Imbrago" data-de="Vollständige Gurtschulung">Full Harness Training</h4>
+                                <p data-en="All workers have completed full harness training" data-ja="全作業員がフルハーネストレーニングを修了" data-es="Todos los trabajadores han completado la capacitación completa en arnés" data-fr="Tous les travailleurs ont suivi une formation complète au harnais" data-it="Tutti i lavoratori hanno completato l'addestramento completo all'imbrago" data-de="Alle Arbeiter haben eine vollständige Gurtschulung absolviert">All workers have completed full harness training</p>
+                            </div>
+                            <div class="strength-item">
+                                <div class="strength-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h4 data-en="Flexible Response" data-ja="柔軟な対応" data-es="Respuesta Flexible" data-fr="Réponse Flexible" data-it="Risposta Flessibile" data-de="Flexible Reaktion">Flexible Response</h4>
+                                <p data-en="to sudden site emergencies and manpower shortages (same-day adjustments possible)" data-ja="現場での緊急事態や人手不足への対応（当日調整可能）" data-es="a emergencias repentinas en el sitio y escasez de mano de obra (ajustes el mismo día posibles)" data-fr="aux urgences soudaines sur site et aux pénuries de main-d'œuvre (ajustements le jour même possibles)" data-it="a emergenze improvvise in sito e carenza di personale (regolazioni lo stesso giorno possibili)" data-de="auf plötzliche Notfälle vor Ort und Personalmangel (Anpassungen am selben Tag möglich)">to sudden site emergencies and manpower shortages (same-day adjustments possible)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-de="Unsere Werte" data-it="I Nostri Valori" data-fr="Nos Valeurs" data-es="Nuestros Valores" data-en="Our Values" data-ja="私たちの価値観">Our Values</h2>
+                    <p data-it="I principi che guidano il nostro lavoro e le nostre relazioni" data-de="Die Prinzipien, die unsere Arbeit und unsere Beziehungen leiten" data-fr="Les principes qui guident notre travail et nos relations" data-es="Los principios que guían nuestro trabajo y nuestras relaciones" data-en="The principles that guide our work and relationships" data-ja="私たちの仕事と人間関係を導く原則">The principles that guide our work and relationships</p>
+                </div>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <h3 data-de="Sicherheit Zuerst" data-it="Sicurezza Prima di Tutto" data-fr="La Sécurité d'abord" data-es="La Seguridad Primero" data-en="Safety First" data-ja="安全第一">Safety First</h3>
+                        <p data-de="Wir priorisieren die Sicherheit in all unseren Operationen, um unser Team, unsere Partner und unsere Projekte zu schützen." data-it="Prioritizziamo la sicurezza in tutte le nostre operazioni per proteggere il nostro team, i nostri partner e i nostri progetti." data-fr="Nous priorisons la sécurité dans toutes nos opérations pour protéger notre équipe, nos partenaires et nos projets." data-es="Priorizamos la seguridad en todas nuestras operaciones para proteger a nuestro equipo, socios y proyectos." data-en="We prioritize safety in all our operations to protect our team, partners, and projects." data-ja="チーム、パートナー、プロジェクトを守るため、すべての作業において安全を最優先します。">We prioritize safety in all our operations to protect our team, partners, and projects.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3 data-de="Ehrliche und Zuverlässige Arbeit" data-it="Lavoro Onesto e Affidabile" data-fr="Travail Honnête et Fiable" data-es="Trabajo Honesto y Confiable" data-en="Honest & Reliable Work" data-ja="誠実で信頼できる仕事">Honest & Reliable Work</h3>
+                        <p data-de="Wir wahren unsere Integrität und Zuverlässigkeit in all unseren Dienstleistungen und Kommunikationen." data-it="Manteniamo la nostra integrità e affidabilità in tutti i nostri servizi e comunicazioni." data-fr="Nous maintenons notre intégrité et notre fiabilité dans tous nos services et communications." data-es="Mantenemos nuestra integridad y fiabilidad en todos nuestros servicios y comunicaciones." data-en="We maintain integrity and reliability in all our services and communications." data-ja="すべてのサービスとコミュニケーションにおいて、誠実さと信頼性を維持します。">We maintain integrity and reliability in all our services and communications.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3 data-de="Starke Zusammenarbeit" data-it="Collaborazione Forte" data-fr="Collaboration Renforcée" data-es="Colaboración Fuerte" data-en="Strong Collaboration" data-ja="強い連携">Strong Collaboration</h3>
+                        <p  data-de="Wir schätzen die enge Zusammenarbeit mit Tischlern und Bauleitern für erfolgreiche Projekte." data-it="Valorizziamo la collaborazione stretta con i falegnami e i supervisori di cantiere per progetti di successo." data-fr="Nous valorisons une collaboration étroite avec les menuisiers et les superviseurs de chantier pour des projets réussis." data-es="Valoramos la colaboración estrecha con carpinteros y supervisores de obra para proyectos exitosos." data-en="We value close collaboration with carpenters and site supervisors for successful projects." data-ja="成功するプロジェクトのために、大工職人や現場監督との密接な連携を重視します。">We value close collaboration with carpenters and site supervisors for successful projects.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3 data-fr="Respect des Connexions Humaines" data-es="Respecto por las Conexiones Humanas" data-en="Respect for Human Connections" data-ja="人間関係の尊重">Respect for Human Connections</h3>
+                     <p 
+  data-de="Wir glauben daran, starke Beziehungen aufzubauen, die auf gegenseitigem Respekt und Vertrauen basieren." 
+  data-it="Crediamo nella costruzione di relazioni solide basate sul rispetto reciproco e sulla fiducia." 
+  data-fr="Nous croyons en la construction de relations solides basées sur le respect mutuel et la confiance." 
+  data-es="Creemos en construir relaciones sólidas basadas en el respeto mutuo y la confianza." 
+  data-en="We believe in building strong relationships based on mutual respect and trust." 
+  data-ja="相互尊重と信頼に基づいた強い関係構築を信条としています。">
+  We believe in building strong relationships based on mutual respect and trust.
+</p>
+ </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-de="Unsere Arbeit" data-it="Il nostro lavoro" data-fr="Notre Travail" data-es="Nuestro Trabajo" data-en="Our Work" data-ja="施工実績">Our Work</h2>
+                    <p data-de="Werfen Sie einen Blick auf unsere Projekte und Dienstleistungen in Aktion" data-it="Dai un'occhiata ai nostri progetti e servizi in azione" data-fr="Découvrez nos projets et services en action" data-es="Echa un vistazo a nuestros proyectos y servicios en acción" data-en="Take a look at our projects and services in action" data-ja="私たちのプロジェクトとサービスの実際の様子をご覧ください">Take a look at our projects and services in action</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="assets/img/wood-placing.png" alt="Construction site">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3 data-en="Material Placement" data-ja="資材配置" data-es="Colocación de Materiales" data-fr="Placement des Matériaux" data-it="Posizionamento Materiali" data-de="Materialplatzierung">Material Placement</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/WhatsApp Image 2025-10-22 at 16.28.20.jpeg" alt="Material lifting">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3 data-en="Material Lifting" data-ja="資材揚重" data-es="Elevación de Materiales" data-fr="Levage de Matériaux" data-it="Sollevamento Materiali" data-de="Materialhebung">Material Lifting</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/Colleage.jpeg" alt="Team collaboration">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3 data-en="Team Collaboration" data-ja="チーム連携" data-es="Colaboración en Equipo" data-fr="Collaboration d'Équipe" data-it="Collaborazione di Squadra" data-de="Teamzusammenarbeit">Team Collaboration</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/building-2.jpeg" alt="Team collaboration">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3 data-en="Construction Progress" data-ja="建設進捗" data-es="Progreso de Construcción" data-fr="Progrès de Construction" data-it="Progresso Costruzione" data-de="Baufortschritt">Construction Progress</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/WhatsApp Image 2025-10-22 at 16.28.19.jpeg" alt="Team collaboration">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3 data-en="Site Management" data-ja="現場管理" data-es="Gestión del Sitio" data-fr="Gestion de Site" data-it="Gestione Sito" data-de="Standortmanagement">Site Management</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/building.jpeg" alt="Team collaboration">
+                        <div class="gallery-overlay">
+                            <div class="gallery-text">
+                                <h3 data-en="Completed Project" data-ja="完成プロジェクト" data-es="Proyecto Completado" data-fr="Projet Terminé" data-it="Progetto Completato" data-de="Abgeschlossenes Projekt">Completed Project</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2 data-de="Kontaktieren Sie uns" data-it="Contattaci" data-fr="Contactez-Nous" data-es="Contáctenos" data-en="Contact Us" data-ja="お問い合わせ">Contact Us</h2>
+                    <p  data-de="Nehmen Sie Kontakt mit uns auf, wenn Sie Unterstützung beim Heben von Baumaterialien benötigen" data-it="Contattaci per le tue esigenze di sollevamento dei materiali da costruzione" data-fr="Contactez-nous pour vos besoins en levage de matériaux de construction" data-es="Póngase en contacto con nosotros para sus necesidades de elevación de materiales de construcción" data-en="Get in touch with us for your construction material lifting needs" data-ja="建設資材揚重に関するご用命は、お気軽にお問い合わせください">Get in touch with us for your construction material lifting needs</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3 data-fr="Informations de Contact" data-es="Información de Contacto" data-en="Contact Information" data-ja="連絡先情報">Contact Information</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3 data-it="Indirizzo" data-de="Adresse" data-fr="Adresse" data-es="Dirección" data-en="Address" data-ja="住所">Address</h3>
+                                <p data-fr="Kanagawa" data-it="Kanagawa" data-de="Kanagawa" data-es="Kanagawa" data-en="Kanagawa" data-ja="神奈川県">神奈川県</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3 data-de="Telefon" data-it="Telefono" data-fr="Téléphone" data-es="Teléfono" data-en="Phone" data-ja="電話番号">Phone</h3>
+                                <p tel="0462590547">0462590547</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h3 data-de="E-Mail" data-it="Email" data-fr="Email" data-es="Correo Electrónico" data-en="Email" data-ja="メール">Email</h3>
+                                <p >[準備中]</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-details">
+                                <h3 data-de="Öffnungszeiten" data-it="Orari di Apertura" data-fr="Heures d'Ouverture" data-es="Horario Comercial" data-en="Business Hours" data-ja="営業時間">Business Hours</h3>
+                                <p data-it="Lunedì–Venerdì, 9:00 – 18:00<br>Chiuso nei fine settimana e nei giorni festivi" data-de="Montag–Freitag, 9:00 – 18:00 Uhr<br>Samstag, Sonntag und Feiertage geschlossen" data-fr="Lundi–Vendredi, 9h00 – 18h00<br>Fermé le week-end et les jours fériés" data-es="Lunes a viernes, 9:00 a. m. a 6:00 p. m.<br>Cerrado los fines de semana y festivos" data-en="Monday–Friday, 9:00 AM – 6:00 PM<br>Closed on weekends and holidays" data-ja="月曜日〜金曜日 9:00〜18:00<br>土日祝日は休業">月曜日〜金曜日 9:00〜18:00<br>土日祝日は休業</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3 data-de="Nachricht senden" data-it="Invia un messaggio" data-fr="Envoyez-nous un message" data-es="Envíenos un mensaje" data-en="Send Us a Message" data-ja="メッセージを送信">Send Us a Message</h3>
+                        <form id="contactForm" action="send-email.php" method="POST">
+                            <div class="form-group">
+                                <label for="name" data-de="Ihr Name" data-it="Il tuo Nome" data-fr="Votre Nom" data-es="Tu Nombre" data-en="Your Name" data-ja="お名前">Your Name</label>
+                                <input type="text" id="name" name="from_name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-de="Ihre E-Mail" data-it="La tua Email" data-fr="Votre Email" data-es="Tu Correo Electrónico" data-en="Your Email" data-ja="メールアドレス">Your Email</label>
+                                <input type="email" id="email" name="reply_to" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" data-de="Ihre Telefonnummer" data-it="Il tuo Numero di Telefono" data-fr="Votre Numéro de Téléphone" data-es="Tu Número de Teléfono" data-en="Phone Number" data-ja="電話番号">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-de="Ihre Nachricht" data-it="Il tuo Messaggio" data-fr="Votre Message" data-es="Tu Mensaje" data-en="Your Message" data-ja="メッセージ内容">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-de="Nachricht senden" data-it="Invia un messaggio" data-fr="Envoyer le message" data-es="Enviar mensaje" data-en="Send Message" data-ja="メッセージを送信">Send Message</button>
+                            <div class="form-status" id="formStatus" role="status" aria-live="polite">
+                                <span class="spinner" id="formSpinner" style="display:none"></span>
+                                <span id="formStatusText"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>MUGEN AUTO NIPPON</h3>
+                    <p data-de="Spezialisiert auf die Bereitstellung von Hebediensten für Materialien auf Baustellen mit einem Fokus auf Sicherheit, Zuverlässigkeit und Zusammenarbeit." data-it="Specializzato nei servizi di sollevamento dei materiali nei cantieri edili, con particolare attenzione alla sicurezza, all’affidabilità e alla collaborazione." data-fr="Spécialisé dans les services de levage de matériaux sur les chantiers de construction avec un accent sur la sécurité, la fiabilité et la collaboration." data-es="Especializándose en servicios de elevación de materiales en sitios de construcción con un enfoque en la seguridad, la confiabilidad y la colaboración." data-en="Specializing in construction site material lifting services with a focus on safety, reliability, and collaboration." data-ja="安全性、信頼性、連携に重点を置いた建設現場資材揚重サービスを専門としています。">Specializing in construction site material lifting services with a focus on safety, reliability, and collaboration.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 data-fr="Liens Rapides" data-es="Enlaces Rápidos" data-en="Quick Links" data-ja="クイックリンク">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" data-de="Startseite" data-it="Home" data-fr="Accueil" data-es="Inicio" data-en="Home" data-ja="ホーム">Home</a></li>
+                        <li><a href="#about" data-de="Über Uns" data-it="Chi Siamo" data-fr="À Propos" data-es="Acerca De" data-en="About Us" data-ja="会社概要">About Us</a></li>
+                        <li><a href="#profile" data-de="Firmenprofil" data-it="Profilo Aziendale" data-fr="Profil de l'Entreprise" data-es="Perfil de la Empresa" data-en="Company Profile" data-ja="会社概要">Company Profile</a></li>
+                        <li><a href="#services" data-de="Dienstleistungen" data-it="Servizi" data-fr="Services" data-es="Servicios" data-en="Services" data-ja="サービス">Services</a></li>
+                        <li><a href="#gallery" data-de="Galerie" data-it="Galleria" data-fr="Galerie" data-es="Galería" data-en="Gallery" data-ja="ギャラリー">Gallery</a></li>
+                        <li><a href="#contact" data-de="Kontakt" data-it="Contatto" data-fr="Contact" data-es="Contacto" data-en="Contact" data-ja="お問い合わせ">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-fr="Services" data-fr="Services" data-es="Servicios" data-en="Services" data-ja="サービス">Services</h3>
+                    <ul>
+                        <li><a href="#services" data-de="Levantamiento de Materiales en Sitios de Construcción" data-it="Levantamiento de Materiales en Sitios de Construcción" data-fr="Levantamiento de Materiales en Sitios de Construcción" data-es="Levantamiento de Materiales en Sitios de Construcción" data-en="Construction Site Material Lifting" data-ja="建設現場資材揚重">Construction Site Material Lifting</a></li>
+                        <li><a href="#services" data-de="Soutien à l'Élévation de Cadres" data-it="Soporte para Elevación de Estructuras" data-fr="Soutien à l'Élévation de Cadres" data-es="Soporte para Elevación de Estructuras" data-en="Framework-Raising Support" data-ja="建方工事支援">Framework-Raising Support</a></li>
+                        <li><a href="#services" data-de="Transport et Placement de Matériaux" data-it="Transporte y Colocación de Materiales" data-fr="Transport et Placement de Matériaux" data-es="Transporte y Colocación de Materiales" data-en="Material Transportation & Placement" data-ja="資材運搬・設置">Material Transportation & Placement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-fr="Contact" data-de="Kontakt" data-it="Contatto" data-es="Contacto" data-en="Contact Info" data-ja="連絡先">Contact Info</h3>
+                    <ul>
+                        <li data-de="Präfektur Kanagawa, Japan" data-it="Prefettura di Kanagawa, Giappone" data-fr="Préfecture de Kanagawa, Japon" data-es="Prefectura de Kanagawa, Japón" data-en="Kanagawa Prefecture, Japan" data-ja="神奈川県">神奈川県</li>
+                        <li data-de="Telefon: 0462590547" data-it="Telefono: 0462590547" data-fr="Téléphone: 0462590547" data-es="Teléfono: 0462590547" data-en="Phone: 0462590547" data-ja="電話: 0462590547">電話: 0462590547</li>
+                        <li data-de="Email: [Bereitstellung ausstehend]" data-it="Email: [In attesa di fornitura]" data-fr="Email: [À fournir]" data-es="Email: [Por proporcionar]" data-en="Email: [To be provided]" data-ja="メール: [準備中]">メール: [準備中]</li>
+                        <li data-de="Öffnungszeiten: Mo-Fr, 9-18 Uhr" data-it="Orari: Lun-Ven, 9-18" data-fr="Heures: Lun-Ven, 9h-18h" data-es="Horas: Lun-Vie, 9AM-6PM" data-en="Hours: Mon-Fri, 9AM-6PM" data-ja="営業時間: 月〜金 9:00-18:00">営業時間: 月〜金 9:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 MUGEN AUTO NIPPON LLC. <span data-de="Alle Rechte vorbehalten." data-it="Tutti i diritti riservati." data-es="Todos los derechos reservados." data-fr="Tous droits réservés." data-en="All rights reserved." data-ja="全著作権所有">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Loading Screen
+        window.addEventListener('load', function() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            setTimeout(() => {
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 1000);
+        });
+
+        // Language switching functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const langButtons = document.querySelectorAll('.lang-btn');
+            let currentLang = 'en';
+
+            function switchLanguage(lang) {
+                currentLang = lang;
+                
+                // Update active button
+                langButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    if(btn.dataset.lang === lang) {
+                        btn.classList.add('active');
+                    }
+                });
+
+                // Update all translatable elements
+                document.querySelectorAll('[data-en]').forEach(element => {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        // Handle form placeholders
+                        const placeholder = element.getAttribute(`data-${lang}`);
+                        if (placeholder) {
+                            element.setAttribute('placeholder', placeholder);
+                        }
+                    } else {
+                        // Handle regular text content
+                        const translation = element.getAttribute(`data-${lang}`);
+                        if (translation) {
+                            element.textContent = translation;
+                        }
+                    }
+                });
+
+                // Update HTML lang attribute
+                document.documentElement.lang = lang;
+
+                // Store preference
+                localStorage.setItem('preferredLang', lang);
+            }
+
+            // Event listeners for language buttons
+            langButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    switchLanguage(this.dataset.lang);
+                });
+            });
+
+            // Load preferred language from storage
+            const savedLang = localStorage.getItem('preferredLang');
+            if (savedLang) {
+                switchLanguage(savedLang);
+            }
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu after clicking a link
+                    const nav = document.getElementById('mainNav');
+                    nav.classList.remove('active');
+                }
+            });
+        });
+
+        // Contact form submission with validation
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const form = this;
+            const formData = new FormData(form);
+
+            const response = await fetch('send-email.php', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.text();
+            const statusEl = document.getElementById('formStatus');
+            const statusText = document.getElementById('formStatusText');
+
+            if (result === 'success') {
+                statusEl.className = 'form-status show success';
+                statusText.textContent = currentLang === 'en' ? 'Message sent. Thank you!' : currentLang === 'fr' ? 'Message envoyé. Merci!' : currentLang === 'es' ? 'Mensaje enviado. ¡Gracias!'  : currentLang === 'de' ? 'Nachricht gesendet. Vielen Dank!' : currentLang === 'it' ? 'Messaggio inviato. Grazie!' : 'メッセージを送信しました。ありがとうございます！';
+                statusText.classList.add('show');
+                form.reset();
+            } else {
+                statusEl.className = 'form-status show error';
+                statusText.textContent = currentLang === 'en' ? 'Error sending message. Try again.' : currentLang === 'fr' ? 'Erreur lors de l\'envoi du message. Veuillez réessayer.' : currentLang === 'es' ? 'Error al enviar el mensaje. Inténtalo de nuevo.' : currentLang === 'de' ? 'Fehler beim Senden der Nachricht. Bitte erneut versuchen.' : currentLang === 'it' ? 'Errore nell\'invio del messaggio. Riprova.' : 'メッセージの送信に失敗しました。もう一度お試しください。';
+            }
+        });
+
+        // Hero Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        
+        // Change slide every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Scroll functionality
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const heroSection = document.querySelector('.hero');
+            const heroHeight = heroSection.offsetHeight;
+            
+            if (window.pageYOffset > heroHeight * 0.1) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // Update active nav link on scroll
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Scroll to top button
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            if (window.pageYOffset > heroHeight) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        
+        // Scroll to top functionality
+        document.getElementById('scrollToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll indicator
+        document.querySelector('.hero-scroll-indicator').addEventListener('click', function() {
+            window.scrollTo({
+                top: document.getElementById('services').offsetTop - 80,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
