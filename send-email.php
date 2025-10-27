@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // If no errors, send email
     if (empty($errors)) {
-        $to = "info@mugenautonippon.com";  
+        $to = "contact@mugenauto.jp";  
         $subject = "New Contact Form Message from $name";
         $body = "You have received a new message from your website contact form.\n\n" .
                 "Name: $name\n" .
@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 "Phone: $phone\n\n" .
                 "Message:\n$message\n";
         
-        $headers = "From: MUGEN AUTO NIPPON <info@mugenautonippon.com>\r\n";
+        $headers = "From: MUGEN AUTO NIPPON <contact@mugenauto.jp>\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
         
