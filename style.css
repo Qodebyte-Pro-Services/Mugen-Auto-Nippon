@@ -84,6 +84,7 @@ header.scrolled {
 
 .header-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
@@ -97,6 +98,14 @@ header.scrolled .header-container {
 .logo {
     display: flex;
     align-items: center;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-left: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .logo img {
@@ -1053,7 +1062,6 @@ header.scrolled .mobile-menu-btn {
         font-size: 0.8rem;
     }
             .header-container {
-                flex-direction: column;
                 text-align: center;
                 align-items: flex-start;
             }
@@ -1061,6 +1069,7 @@ header.scrolled .mobile-menu-btn {
             .logo {
                 margin-bottom: 15px;
             }
+
 
             .logo img {
                 width: 140px;
